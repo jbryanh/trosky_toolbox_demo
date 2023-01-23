@@ -3,10 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "f0e85e2c99bb1eae47441ab8c4bc5973",
+  "assets/AssetManifest.json": "90069d50a0a6d9cc369a843da1be3697",
 "assets/assets/images/trosky_toolbox_square_black.png": "1eb6d079a71ae4e1ee6205b8b153d60e",
-"assets/assets/sounds/out.m4a": "6d2022ddd524e40540f8478628ef97f1",
-"assets/assets/sounds/safe.m4a": "1e339f9806ec9bab439d92c611ddcb9a",
+"assets/assets/sounds/out.wav": "e04355fb83330d45fea21c9e125e519e",
+"assets/assets/sounds/safe.wav": "eef03c61d51e067f7a9bd1aeb46524e0",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/NOTICES": "d92e43420112c33b5a35c47c7d4786c7",
@@ -25,9 +25,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "9ab78f4616d5f36a9500a10aa221da77",
-"/": "9ab78f4616d5f36a9500a10aa221da77",
-"main.dart.js": "77bbdaa20d437a9fcc500aaed0c04e53",
+"index.html": "5fb3eb9127bab66912c0c9c72fcc8c64",
+"/": "5fb3eb9127bab66912c0c9c72fcc8c64",
+"main.dart.js": "eb4e7a85d394e47775b43a0992058154",
 "manifest.json": "c568eb5b7467c81f3e17a64f9ddd383b",
 "splash/img/dark-1x.png": "62c95104e7fd830cf1d737cc1ab93b62",
 "splash/img/dark-2x.png": "f61a656baee0eaaf4075d59bdf63751e",
