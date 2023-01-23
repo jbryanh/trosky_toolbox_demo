@@ -53704,7 +53704,7 @@ p=q.as
 s=2
 return A.D(p.dn(0),$async$mv)
 case 2:s=3
-return A.D(p.wK("asset:/assets/sounds/safe.wav"),$async$mv)
+return A.D(p.wK("asset:/assets/sounds/out.wav"),$async$mv)
 case 3:p.cd(0)
 return A.A(null,r)}})
 return A.B($async$mv,r)},
@@ -53820,7 +53820,6 @@ s=A.aj(0,0,0,0,0,0)
 q=q.a!==s.a}else q=!0}else q=!1
 else q=!1
 if(q){A.eZ().$1("finished - safe, so going to clear everything")
-p.mw()
 $.b9.CW$.push(new A.a28(p,a))}q=p.w!==B.cj&&p.d.a>A.aj(0,0,0,26,0,0).a
 s=r.d
 if(q)return A.fv(A.a8b(p.d),s,null)
@@ -53831,13 +53830,14 @@ $1(a){var s=this.a
 return s.a5(new A.a27(s,this.b))},
 $S:6}
 A.a27.prototype={
-$0(){var s=this.b.Y(t.Cu)
+$0(){var s,r=this.a
+r.mw()
+s=this.b.Y(t.Cu)
 s.toString
 s.f.G3(B.FL)
-s=this.a
-s.w=B.cj
-s.d=A.aj(0,0,0,0,0,0)
-s.e=A.aj(0,0,0,0,0,0)},
+r.w=B.cj
+r.d=A.aj(0,0,0,0,0,0)
+r.e=A.aj(0,0,0,0,0,0)},
 $S:0}
 A.tR.prototype={
 h(a){return"Status."+this.b}}
