@@ -53730,7 +53730,8 @@ aV(){this.bq()
 this.f=new A.bc(Date.now(),!1).A(0,A.aj(0,0,0,0,0,0))},
 o0(){var s=0,r=A.B(t.z),q=this,p
 var $async$o0=A.x(function(a,b){if(a===1)return A.y(b,r)
-while(true)switch(s){case 0:A.ee().$1("values for remaining: "+q.d.h(0)+" and pausedRemaining "+q.e.h(0)+" and "+q.w.h(0))
+while(true)switch(s){case 0:q.at=!0
+A.ee().$1("values for remaining: "+q.d.h(0)+" and pausedRemaining "+q.e.h(0)+" and "+q.w.h(0))
 s=q.d.a<=A.aj(0,0,0,26,0,0).a&&q.e.a<=A.aj(0,0,0,26,0,0).a&&q.w!==B.bA?2:4
 break
 case 2:A.ee().$1("starting timer for "+q.x.h(0))
