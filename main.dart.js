@@ -53690,7 +53690,7 @@ $S:346}
 A.AI.prototype={
 M(a){return new A.r7(B.E_,"Trosky Toolbox",A.a7s(null,new A.kY(A.as([50,A.hS(29,44,91,0.1),100,A.hS(29,44,91,0.2),200,A.hS(29,44,91,0.3),300,A.hS(29,44,91,0.4),400,A.hS(29,44,91,0.5),500,A.hS(29,44,91,0.6),600,A.hS(29,44,91,0.7),700,A.hS(29,44,91,0.8),800,A.hS(29,44,91,0.9),900,A.hS(29,44,91,1)],t.S,t.iO),4280101979),null),null)}}
 A.rh.prototype={
-aw(){return new A.vk(A.aj(0,0,0,0,0,0),A.aj(0,0,0,0,0,0),B.cj,A.aj(0,0,0,4220,0,0),A.as(["NITRO",A.aj(0,0,0,3650,0,0),"GREAT-GREAT",A.aj(0,0,0,3850,0,0),"GREAT",A.aj(0,0,0,4050,0,0),"AVERAGE",A.aj(0,0,0,4250,0,0),"POOR",A.aj(0,0,0,4450,0,0),"POOR-POOR",A.aj(0,0,0,4650,0,0)],t.N,t.eP),A.a9c(),A.a9c(),B.l)}}
+aw(){return new A.vk(A.aj(0,0,0,0,0,0),A.aj(0,0,0,0,0,0),B.cj,A.aj(0,0,0,4220,0,0),A.as(["NITRO",A.aj(0,0,0,1600,0,0),"GREAT-GREAT",A.aj(0,0,0,1800,0,0),"GREAT",A.aj(0,0,0,2000,0,0),"AVERAGE",A.aj(0,0,0,2200,0,0),"POOR",A.aj(0,0,0,2400,0,0),"POOR-POOR",A.aj(0,0,0,2600,0,0)],t.N,t.eP),A.a9c(),A.a9c(),B.l)}}
 A.vk.prototype={
 mD(){var s=0,r=A.B(t.z),q=this,p
 var $async$mD=A.x(function(a,b){if(a===1)return A.y(b,r)
@@ -53826,7 +53826,7 @@ r=n.d.a>A.aj(0,0,0,50,0,0).a&&s
 o=s?B.zG:B.zF
 o=A.aac(o,s?B.DK:B.DJ,48)
 m=this.b
-if(!s){q=A.aj(0,0,0,5,0,0)
+if(!s){q=A.aj(0,0,0,2,0,0)
 n=new A.o7(new A.a29(n,m),A.aoj(q,B.m),p)}else n=new A.hR(new A.a2a(n,r,!0,m),p)
 return A.dJ(A.fO(A.a([o,n],t.E),B.a3,B.b_,B.a9,B.X),p,p)},
 $S:349}
