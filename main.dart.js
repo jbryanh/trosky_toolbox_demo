@@ -25902,11 +25902,11 @@ _.ch=null
 _.CW=0
 _.cx=h
 _.db=null
-_.dy=_.dx=!1
+_.fr=_.dy=_.dx=!1
 _.fx=i
 _.k1=null
 _.k2=!1
-_.k3=35
+_.k3=34
 _.k4=80
 _.ok=j
 _.p1=k
@@ -87379,15 +87379,15 @@ return A.D(null,r)}})
 return A.E($async$oa,r)},
 qa(){var s=0,r=A.F(t.z),q=this,p
 var $async$qa=A.B(function(a,b){if(a===1)return A.C(b,r)
-while(true)switch(s){case 0:A.aU().$1("resuming safe")
+while(true)switch(s){case 0:q.rx=!1
+A.aU().$1("resuming safe")
 p=q.p4
 s=2
 return A.M(p.dT(0),$async$qa)
 case 2:A.aU().$1("pause after play")
 s=3
 return A.M(p.cz(0),$async$qa)
-case 3:q.rx=!0
-s=4
+case 3:s=4
 return A.M(A.zv(A.aB(0,0,0,5,0,0),t.z),$async$qa)
 case 4:A.aU().$1("doing another set state back to ready")
 q.X(new A.anS(q))
@@ -87441,8 +87441,8 @@ q.rx=!0
 A.aU().$1("starting timer for "+q.x.l(0))
 q.at=A.aB(0,0,0,0,0,0)
 q.d=A.aB(0,0,0,0,0,0)
-q.oa()
-q.X(new A.amS(q))
+if(!q.fr){q.fr=!0
+q.oa()}q.X(new A.amS(q))
 s=3
 break
 case 5:A.aU().$1("Stopped before expired.")
@@ -87901,10 +87901,9 @@ $S:539}
 A.anr.prototype={
 $0(){var s=0,r=A.F(t.H),q=this,p,o,n
 var $async$$0=A.B(function(a,b){if(a===1)return A.C(b,r)
-while(true)switch(s){case 0:o=q.a
-o.oa()
-p=q.b
-n=!o.dy
+while(true)switch(s){case 0:p=q.a
+o=q.b
+n=!p.dy
 if(n){s=5
 break}else b=n
 s=6
@@ -87917,15 +87916,15 @@ case 6:s=b?2:4
 break
 case 2:A.aU().$1("do not have permission, so need to ask again.")
 s=8
-return A.M(A.axn(!0,new A.ang(),p,null,!0,!0,t.z),$async$$0)
+return A.M(A.axn(!0,new A.ang(),o,null,!0,!0,t.z),$async$$0)
 case 8:s=3
 break
-case 4:s=!o.dy?9:10
+case 4:s=!p.dy?9:10
 break
 case 9:s=11
-return A.M(o.ru(),$async$$0)
-case 11:case 10:o.dy=!0
-new A.anw(o,p).$0()
+return A.M(p.ru(),$async$$0)
+case 11:case 10:p.dy=!0
+new A.anw(p,o).$0()
 case 3:return A.D(null,r)}})
 return A.E($async$$0,r)},
 $S:25}
@@ -87956,7 +87955,8 @@ A.aU().$1("Values: "+a.l(0))
 s=this.a
 s.k3=a.a
 s.k4=a.b
-A.jR(this.b,!1).zd(null)
+if(!s.fr){s.rx=s.fr=!0
+s.oa()}A.jR(this.b,!1).zd(null)
 s.fx.h5(0)
 s.X(new A.and(s))},
 $S:540}
