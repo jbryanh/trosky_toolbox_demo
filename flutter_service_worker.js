@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "e4126aea611cd7a76c1acae1eb3ee673",
+  "assets/AssetManifest.json": "0f63ca3ef3cf3c99fe795bfd2624361f",
 "assets/assets/images/elite_infielders_mantra.png": "da0b9510100039fb457bd04b9ff0a25f",
 "assets/assets/images/field_entry_mantra.png": "312a2ae555bcf7305f329ef32d77aaa0",
 "assets/assets/images/game_day_mantra.png": "4ec997e02a9eb0275d3d04047395136a",
@@ -20,6 +20,7 @@ const RESOURCES = {
 "assets/assets/images/trosky_tb_blue.png": "b8dc579a1ebb0184827c8aab796aa030",
 "assets/assets/images/trosky_toolbox_square_black.png": "1eb6d079a71ae4e1ee6205b8b153d60e",
 "assets/assets/sounds/out.wav": "e04355fb83330d45fea21c9e125e519e",
+"assets/assets/sounds/safe.m4a": "00a70603716a13fc1cde0a1cfbc121e0",
 "assets/assets/sounds/safe.wav": "f3c30db7ba61f3fcd52be46bc81ecaea",
 "assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
@@ -38,9 +39,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "1e26ae28ef4230dcff3496c85793e730",
-"/": "1e26ae28ef4230dcff3496c85793e730",
-"main.dart.js": "3b77049138f2bd7bf9432fbcb24c4d2c",
+"index.html": "0d102f5c4356b1e5ad993cb0510d3a48",
+"/": "0d102f5c4356b1e5ad993cb0510d3a48",
+"main.dart.js": "39cc6cc8a6ec6b4c1b95dcb279b72166",
 "manifest.json": "c568eb5b7467c81f3e17a64f9ddd383b",
 "splash/img/dark-1x.png": "62c95104e7fd830cf1d737cc1ab93b62",
 "splash/img/dark-2x.png": "f61a656baee0eaaf4075d59bdf63751e",
