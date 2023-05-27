@@ -43,7 +43,7 @@
 <!--Generated to reload from scratch every time.-->
 <!--Without refresh logic-->
 <!--<script>-->
-<!--  var serviceWorkerVersion = '35452335';-->
+<!--  var serviceWorkerVersion = '2996144033';-->
 <!--  var scriptLoaded = false;-->
 <!--  function loadMainDartJs() {-->
 <!--    if (scriptLoaded) {-->
@@ -181,7 +181,6 @@
 <script>
   var serviceWorkerVersion = null;
   var scriptLoaded = false;
-  var refreshing = false;
 
   function loadMainDartJs() {
     if (scriptLoaded) {
@@ -197,6 +196,20 @@
   if ('serviceWorker' in navigator) {
     // Service workers are supported. Use them.
     window.addEventListener('load', function () {
+      var refreshing = false;
+
+      // Detect if the user taps the refresh button or reloads the page
+      window.addEventListener('beforeunload', function () {
+        refreshing = true;
+      });
+
+      // Detect if the user presses the keyboard shortcut to refresh the page (F5 or Ctrl+R)
+      window.addEventListener('keydown', function (event) {
+        if ((event.key === 'F5' || event.keyCode === 116) && !event.ctrlKey && !event.shiftKey) {
+          refreshing = true;
+        }
+      });
+
       // Wait for registration to finish before dropping the <script> tag.
       // Otherwise, the browser will load the script multiple times,
       // potentially different versions.
@@ -207,10 +220,8 @@
             serviceWorker.addEventListener('statechange', () => {
               if (serviceWorker.state === 'activated') {
                 console.log('Installed new service worker.');
-                // Check if the page is being refreshed
-                if (!refreshing || refreshing) {
-                  window.location.reload(true);
-                }
+                // Force a hard reload in all cases
+                window.location.reload(true);
               }
             });
           }
@@ -229,40 +240,28 @@
             console.log('Loading app from service worker.');
             // Check if the page is being refreshed
             if (!refreshing) {
+              console.log('loadMainDartJs because not refreshing');
               loadMainDartJs();
+            } else {
+              // Force a hard reload if the page is being refreshed
+              console.log('Force a hard reload if the page is being refreshed');
+              window.location.reload(true);
             }
           }
+        })
+        .catch(function (error) {
+          console.error('Error during service worker registration:', error);
+          // Force a hard reload if there's an error during registration
+          window.location.reload(true);
         });
-
-      // If service worker doesn't succeed in a reasonable amount of time,
-      // fallback to plain <script> tag.
-      setTimeout(() => {
-        if (!scriptLoaded) {
-          console.warn('Failed to load app from service worker. Falling back to plain <script> tag.');
-          // Check if the page is being refreshed
-          if (!refreshing) {
-            loadMainDartJs();
-          }
-        }
-      }, 4000);
-    });
-
-    // Detect if the user taps the refresh button or reloads the page
-    window.addEventListener('beforeunload', function () {
-      refreshing = true;
-    });
-
-    // Detect if the user presses the keyboard shortcut to refresh the page (F5 or Ctrl+R)
-    window.addEventListener('keydown', function (event) {
-      if ((event.key === 'F5' || event.keyCode === 116) && !event.ctrlKey && !event.shiftKey) {
-        refreshing = true;
-      }
     });
   } else {
     // Service workers not supported. Just drop the <script> tag.
     loadMainDartJs();
   }
 </script>
+
+
 
 
 </body></html>
