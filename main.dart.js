@@ -90386,7 +90386,8 @@ k=A.bI(A.a([o,p,new A.aH(m,l,g),A.bR(A.bI(A.a([A.fw(new A.wh(210,d.k4,new A.apK(
 if(d.ax&&d.r===B.cB)q=B.qs
 else q=d.r===B.aq?B.qr:B.jk
 q=A.bR(A.aBD(A.uc(B.cS,A.cV(A.Ak(q,g,g,50),g,g),g,g,"timer",g,!1,new A.apN(d,c),"timer"),B.i9),100,100)
-p=s>750?75:s/10-35
+if(s>750)p=75
+else p=s<400?0:s/10-35
 o=s>650
 m=o?10:s*0.015
 l=d.fx
