@@ -89917,7 +89917,7 @@ return A.z(l.Jg("asset:/assets/sounds/safe.m4a"),$async$na)
 case 6:s=7
 return A.z(l.eg(B.k_),$async$na)
 case 7:s=8
-return A.z(o.p2.Jg("asset:/assets/sounds/bell.wav"),$async$na)
+return A.z(o.p2.Jg("asset:/assets/sounds/bell.m4a"),$async$na)
 case 8:s=9
 return A.z(l.eg(B.k_),$async$na)
 case 9:q=1
