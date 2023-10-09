@@ -1,5 +1,7 @@
-<!DOCTYPE html><html><head>
-  <!--
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
 
@@ -12,256 +14,124 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-<!--  April25-->
-  <base href="/trosky_toolbox_demo/">
+    <base href="/" />
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Trosky Toolbox">
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="A new Flutter project." />
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="trosky_toolbox">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="example" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
-
-  <title>trosky_toolbox</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" type="text/css" href="splash/style.css">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-  <script src="splash/splash.js"></script>
-</head>
-<body>  <picture id="splash">
-      <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light)">
-      <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
-      <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt="">
-  </picture>
-
-<!--Generated to reload from scratch every time.-->
-<!--Without refresh logic-->
-<!--<script>-->
-<!--  const serviceWorkerVersion = "3857939733";-->
-<!--  var scriptLoaded = false;-->
-<!--  function loadMainDartJs() {-->
-<!--    if (scriptLoaded) {-->
-<!--      return;-->
-<!--    }-->
-<!--    scriptLoaded = true;-->
-<!--    var scriptTag = document.createElement('script');-->
-<!--    scriptTag.src = 'main.dart.js';-->
-<!--    scriptTag.type = 'application/javascript';-->
-<!--    document.body.append(scriptTag);-->
-<!--  }-->
-
-<!--  if ('serviceWorker' in navigator) {-->
-<!--    // Service workers are supported. Use them.-->
-<!--    window.addEventListener('load', function () {-->
-<!--      // Wait for registration to finish before dropping the <script> tag.-->
-<!--      // Otherwise, the browser will load the script multiple times,-->
-<!--      // potentially different versions.-->
-<!--      var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;-->
-<!--      navigator.serviceWorker.register(serviceWorkerUrl)-->
-<!--        .then((reg) => {-->
-<!--          function waitForActivation(serviceWorker) {-->
-<!--            serviceWorker.addEventListener('statechange', () => {-->
-<!--              if (serviceWorker.state === 'activated') {-->
-<!--                console.log('Installed new service worker.');-->
-<!--                // Reload the app from scratch without asking the user.-->
-<!--                window.location.reload(true);-->
-<!--              }-->
-<!--            });-->
-<!--          }-->
-<!--          if (!reg.active && (reg.installing || reg.waiting)) {-->
-<!--            // No active web worker and we have installed or are installing-->
-<!--            // one for the first time. Simply wait for it to activate.-->
-<!--            waitForActivation(reg.installing || reg.waiting);-->
-<!--          } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {-->
-<!--            // When the app updates, the serviceWorkerVersion changes,-->
-<!--            // so we need to ask the service worker to update.-->
-<!--            console.log('New service worker available.');-->
-<!--            reg.update();-->
-<!--            waitForActivation(reg.installing);-->
-<!--          } else {-->
-<!--            // Existing service worker is still good.-->
-<!--            console.log('Loading app from service worker.');-->
-<!--            loadMainDartJs();-->
-<!--          }-->
-<!--        });-->
-
-<!--      // If service worker doesn't succeed in a reasonable amount of time,-->
-<!--      // fallback to plain <script> tag.-->
-<!--      setTimeout(() => {-->
-<!--        if (!scriptLoaded) {-->
-<!--          console.warn('Failed to load app from service worker. Falling back to plain <script> tag.');-->
-<!--          loadMainDartJs();-->
-<!--        }-->
-<!--      }, 4000);-->
-<!--    });-->
-<!--  } else {-->
-<!--    // Service workers not supported. Just drop the <script> tag.-->
-<!--    loadMainDartJs();-->
-<!--  }-->
-<!--</script>-->
-
-
-
-  <!-- This script installs service_worker.js to provide PWA functionality to
+    <title>com</title>
+    <link rel="stylesheet" href="splash/style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <div id="preloader" class="preloader-container">
+      <div class="animation">
+        <div class="player">
+          <lottie-player
+            src="splash/splash.json"
+            background="transparent"
+            speed="1"
+            style="width: 400px; height: 400px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+    </div>
+    <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
-<!--I commented it out for a new AI given version that reload every time.  this was the original-->
-<!--  <script>-->
-<!--    var serviceWorkerVersion = null;-->
-<!--    var scriptLoaded = false;-->
-<!--    function loadMainDartJs() {-->
-<!--      if (scriptLoaded) {-->
-<!--        return;-->
-<!--      }-->
-<!--      scriptLoaded = true;-->
-<!--      var scriptTag = document.createElement('script');-->
-<!--      scriptTag.src = 'main.dart.js';-->
-<!--      scriptTag.type = 'application/javascript';-->
-<!--      document.body.append(scriptTag);-->
-<!--    }-->
-
-<!--    if ('serviceWorker' in navigator) {-->
-<!--      // Service workers are supported. Use them.-->
-<!--      window.addEventListener('load', function () {-->
-<!--        // Wait for registration to finish before dropping the <script> tag.-->
-<!--        // Otherwise, the browser will load the script multiple times,-->
-<!--        // potentially different versions.-->
-<!--        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;-->
-<!--        navigator.serviceWorker.register(serviceWorkerUrl)-->
-<!--          .then((reg) => {-->
-<!--            function waitForActivation(serviceWorker) {-->
-<!--              serviceWorker.addEventListener('statechange', () => {-->
-<!--                if (serviceWorker.state == 'activated') {-->
-<!--                  console.log('Installed new service worker.');-->
-<!--                  loadMainDartJs();-->
-<!--                }-->
-<!--              });-->
-<!--            }-->
-<!--            if (!reg.active && (reg.installing || reg.waiting)) {-->
-<!--              // No active web worker and we have installed or are installing-->
-<!--              // one for the first time. Simply wait for it to activate.-->
-<!--              waitForActivation(reg.installing || reg.waiting);-->
-<!--            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {-->
-<!--              // When the app updates the serviceWorkerVersion changes, so we-->
-<!--              // need to ask the service worker to update.-->
-<!--              console.log('New service worker available.');-->
-<!--              reg.update();-->
-<!--              waitForActivation(reg.installing);-->
-<!--            } else {-->
-<!--              // Existing service worker is still good.-->
-<!--              console.log('Loading app from service worker.');-->
-<!--              loadMainDartJs();-->
-<!--            }-->
-<!--          });-->
-
-<!--        // If service worker doesn't succeed in a reasonable amount of time,-->
-<!--        // fallback to plaint <script> tag.-->
-<!--        setTimeout(() => {-->
-<!--          if (!scriptLoaded) {-->
-<!--            console.warn(-->
-<!--              'Failed to load app from service worker. Falling back to plain <script> tag.',-->
-<!--            );-->
-<!--            loadMainDartJs();-->
-<!--          }-->
-<!--        }, 4000);-->
-<!--      });-->
-<!--    } else {-->
-<!--      // Service workers not supported. Just drop the <script> tag.-->
-<!--      loadMainDartJs();-->
-<!--    }-->
-<!--  </script>-->
-
-<!--full reload even on refresh-->
-<script>
-  var serviceWorkerVersion = null;
-  var scriptLoaded = false;
-
-  function loadMainDartJs() {
-    if (scriptLoaded) {
-      return;
-    }
-    scriptLoaded = true;
-    var scriptTag = document.createElement('script');
-    scriptTag.src = 'main.dart.js';
-    scriptTag.type = 'application/javascript';
-    document.body.append(scriptTag);
-  }
-
-  if ('serviceWorker' in navigator) {
-    // Service workers are supported. Use them.
-    window.addEventListener('load', function () {
-      var refreshing = false;
-
-      // Detect if the user taps the refresh button or reloads the page
-      window.addEventListener('beforeunload', function () {
-        refreshing = true;
-      });
-
-      // Detect if the user presses the keyboard shortcut to refresh the page (F5 or Ctrl+R)
-      window.addEventListener('keydown', function (event) {
-        if ((event.key === 'F5' || event.keyCode === 116) && !event.ctrlKey && !event.shiftKey) {
-          refreshing = true;
+    <script>
+      const serviceWorkerVersion = "1506273747";
+      var scriptLoaded = false;
+      function loadMainDartJs() {
+        if (scriptLoaded) {
+          return;
         }
-      });
-
-      // Wait for registration to finish before dropping the <script> tag.
-      // Otherwise, the browser will load the script multiple times,
-      // potentially different versions.
-      var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-      navigator.serviceWorker.register(serviceWorkerUrl)
-        .then((reg) => {
-          function waitForActivation(serviceWorker) {
-            serviceWorker.addEventListener('statechange', () => {
-              if (serviceWorker.state === 'activated') {
-                console.log('Installed new service worker.');
-                // Force a hard reload in all cases
-                window.location.reload(true);
-              }
-            });
+        scriptLoaded = true;
+        var scriptTag = document.createElement("script");
+        scriptTag.src = "main.dart.js";
+        scriptTag.type = "application/javascript";
+        document.body.append(scriptTag);
+      }
+      let box = document.querySelector("#preloader");
+      function fadeOut() {
+        box.classList.add("visuallyhidden");
+        box.addEventListener(
+          "transitionend",
+          function (e) {
+            box.classList.add("hidden");
+          },
+          {
+            capture: false,
+            once: true,
+            passive: false,
           }
-          if (!reg.active && (reg.installing || reg.waiting)) {
-            // No active web worker and we have installed or are installing
-            // one for the first time. Simply wait for it to activate.
-            waitForActivation(reg.installing || reg.waiting);
-          } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-            // When the app updates, the serviceWorkerVersion changes,
-            // so we need to ask the service worker to update.
-            console.log('New service worker available.');
-            reg.update();
-            waitForActivation(reg.installing);
-          } else {
-            // Existing service worker is still good.
-            console.log('Loading app from service worker.');
-            // Check if the page is being refreshed
-            if (!refreshing) {
-              console.log('loadMainDartJs because not refreshing');
-              loadMainDartJs();
-            } else {
-              // Force a hard reload if the page is being refreshed
-              console.log('Force a hard reload if the page is being refreshed');
-              window.location.reload(true);
+        );
+      }
+
+      if ("serviceWorker" in navigator) {
+        // Service workers are supported. Use them.
+        window.addEventListener("load", function () {
+          // Wait for registration to finish before dropping the <script> tag.
+          // Otherwise, the browser will load the script multiple times,
+          // potentially different versions.
+          var serviceWorkerUrl =
+            "flutter_service_worker.js?v=" + serviceWorkerVersion;
+          navigator.serviceWorker.register(serviceWorkerUrl).then((reg) => {
+            function waitForActivation(serviceWorker) {
+              serviceWorker.addEventListener("statechange", () => {
+                if (serviceWorker.state == "activated") {
+                  console.log("Installed new service worker.");
+                  loadMainDartJs();
+                }
+              });
             }
-          }
-        })
-        .catch(function (error) {
-          console.error('Error during service worker registration:', error);
-          // Force a hard reload if there's an error during registration
-          window.location.reload(true);
+            if (!reg.active && (reg.installing || reg.waiting)) {
+              // No active web worker and we have installed or are installing
+              // one for the first time. Simply wait for it to activate.
+              waitForActivation(reg.installing || reg.waiting);
+            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
+              // When the app updates the serviceWorkerVersion changes, so we
+              // need to ask the service worker to update.
+              console.log("New service worker available.");
+              reg.update();
+              waitForActivation(reg.installing);
+            } else {
+              //fadeOut();
+              // Existing service worker is still good.
+              console.log("Loading app from service worker.");
+              loadMainDartJs();
+            }
+          });
+          setTimeout(fadeOut, 3000);
+          // If service worker doesn't succeed in a reasonable amount of time,
+          // fallback to plaint <script> tag.
+          setTimeout(() => {
+            if (!scriptLoaded) {
+              console.warn(
+                "Failed to load app from service worker. Falling back to plain <script> tag."
+              );
+              loadMainDartJs();
+            }
+          }, 4000);
         });
-    });
-  } else {
-    // Service workers not supported. Just drop the <script> tag.
-    loadMainDartJs();
-  }
-</script>
+      } else {
+        fadeOut();
+        // Service workers not supported. Just drop the <script> tag.
+        loadMainDartJs();
+      }
+    </script>
+  </body>
+</html>
 
-
-
-
-</body></html>
